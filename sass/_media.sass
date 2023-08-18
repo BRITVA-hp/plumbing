@@ -1,0 +1,176 @@
+@media screen and (max-width: 1440px)
+  .main
+    background: url("../img/main/bg.png") no-repeat calc(100% + 200px) calc(100% - 105px)
+    margin-bottom: 90px
+    &__steps
+      &__row
+        max-width: 950px
+      &__arrow
+        width: 75px
+        overflow: hidden
+        display: flex
+        justify-content: flex-end
+        img
+          max-width: none
+    &__step
+      &__num
+        width: 35px
+        height: 35px
+        font-size: 20px
+      &__text
+        font-size: 16px
+        max-width: 90px
+    &__container
+      background: url("../img/main/img.png") no-repeat right bottom/400px
+      padding: 45px 20px 60px
+    &__title
+      font-size: 55px
+      padding: 14px 28px
+    &__subtitle
+      font-size: 26px
+    &__text
+      font-size: 26px
+      margin-bottom: 35px
+    &__row
+      gap: 20px
+      max-width: 700px
+      flex-wrap: wrap
+
+  .header
+    padding-top: 30px
+    padding-bottom: 30px
+    &__logo
+      font-size: 22px
+    &__phone
+      font-size: 24px
+    &__item
+      font-size: 16px
+
+@media screen and (max-width: 1100px)
+  .header
+    padding-top: 24px
+    padding-bottom: 24px
+    &__logo
+      font-size: 18px
+    &__phone
+      display: none
+
+@media screen and (max-width: 991px)
+  .main
+    margin-bottom: 80px
+    position: relative
+    padding-bottom: 80px
+    &__step
+      &--3
+        order: 7
+      &--4
+        order: 5
+    &__steps
+      padding: 16px 20px
+      &__row
+        max-width: 450px
+        flex-wrap: wrap
+        position: relative
+        gap: 80px 20px
+      &__arrow
+        width: 50px
+        &--2
+          position: absolute
+          transform: rotate(90deg) translateX(calc(-50% + 18px))
+          right: 50px
+          top: 50%
+        &--3
+          transform: rotateY(180deg)
+          order: 6
+    &__container
+      padding-bottom: 45px
+      background: url("../img/main/imgM.png") no-repeat calc(100% + 50px) bottom
+    &__row
+      margin-bottom: 0
+    &__card
+      font-size: 16px
+      img
+        width: 50px
+    &__title
+      font-size: 35px
+      margin-bottom: 25px
+    &__text
+      font-size: 22px
+    &__form
+      position: absolute
+      width: 100%
+      left: 0
+      bottom: 0
+      justify-content: center
+      padding: 0 20px
+      gap: 15px
+    &__input
+      font-size: 16px
+      height: 50px
+    &__button
+      height: 50px
+      width: 100%
+      font-size: 16px
+    &__input-group
+      width: 100%
+
+  .header
+    &__item
+      max-width: 150px
+
+@media screen and (max-width: 767px)
+  .main
+    padding: 100px 0 210px
+    background: url("../img/main/bgM.png") no-repeat right top
+    text-align: center
+    &__row
+      justify-content: center
+      margin-bottom: 40px
+      gap: 25px
+    &__card
+      text-align: left
+    &__img
+      display: block
+      margin: auto
+    &__container
+      padding: 0 15px
+      background: none
+    &__form
+      flex-direction: column
+    &__input-group, &__button
+      max-width: 400px
+    &__text
+      &__last
+        display: block
+
+  .header
+    padding: 26px 20px 0
+    background: linear-gradient(to bottom, #fff 48%, transparent 48%)
+    margin-bottom: -75px
+    position: relative
+    z-index: 1
+    &__row
+      flex-direction: column
+      align-items: center
+      gap: 36px
+    &__box
+      flex-direction: column
+      gap: 10px
+    &__item
+      max-width: none
+
+@media screen and (max-width: 575px)
+  .main
+    &__row
+      justify-content: flex-start
+      max-width: 300px
+      margin: 0 auto 40px
+    &__step
+      flex-direction: column
+    &__steps
+      &__row
+        flex-direction: column
+        gap: 40px
+      &__arrow
+        position: static
+        transform: rotate(90deg)
