@@ -1,4 +1,61 @@
 @media screen and (max-width: 1440px)
+  .section
+    &__title
+      font-size: 40px
+
+  .notfound
+    &__img
+      width: 600px
+      margin: -50px 20px 20px
+
+  .thanks
+    max-width: 930px
+    &__title
+      font-size: 40px
+      margin-bottom: 15px
+    &__text
+      font-size: 22px
+
+  .footer
+    &__phone
+      font-size: 24px
+    &__logo
+      font-size: 18px
+    &__card
+      font-size: 16px
+
+  .advantages
+    margin-bottom: 90px
+    &__container
+      max-width: 970px
+    &__card
+      &__title
+        font-size: 28px
+      &__text
+        font-size: 18px
+      img
+        width: 240px
+
+  .form
+    padding: 50px 20px
+    margin-bottom: 90px
+    &__text
+      font-size: 20px
+
+  .kinds
+    margin-bottom: 90px
+    &__card
+      &__button
+        font-size: 18px
+        padding: 18px 0
+        border-radius: 10px
+      &__text
+        font-size: 16px
+        padding: 0 20px
+      &__title
+        padding: 0 20px
+        font-size: 22px
+
   .main
     background: url("../img/main/bg.png") no-repeat calc(100% + 200px) calc(100% - 105px)
     margin-bottom: 90px
@@ -56,6 +113,111 @@
       display: none
 
 @media screen and (max-width: 991px)
+  .section
+    &__title
+      font-size: 35px
+
+  .thanks
+    max-width: 400px
+    &__close
+      right: 50%
+      transform: translateX(50%)
+      top: 25px
+    &__title
+      font-size: 35px
+      margin-bottom: 10px
+
+  .modal
+    &__dialog
+      border-radius: 15px
+      max-width: 400px
+      padding: 90px 15px 45px
+    &__close
+      right: 50%
+      transform: translateX(50%)
+    &__title
+      font-size: 30px
+      margin-bottom: 13px
+    &__text
+      margin-bottom: 20px
+      font-size: 22px
+    &__form
+      flex-direction: column
+      align-items: center
+      gap: 10px
+    &__input
+      font-size: 16px
+      height: 50px
+      border-radius: 10px
+    &__button
+      height: 50px
+      font-size: 18px
+      border-radius: 10px
+      max-width: none
+    &__input-group
+      max-width: none
+
+
+  .footer
+    &__phone
+      font-size: 20px
+    &__card
+      max-width: 145px
+
+  .advantages
+    margin-bottom: 80px
+    &__container
+      max-width: 700px
+    &__card
+      gap: 40px
+      img
+        width: 165px
+      &__box
+        padding: 25px 20px 25px 0
+      &__title
+        font-size: 22px
+        margin-bottom: 15px
+      &__text
+        font-size: 16px
+
+  .form
+    padding: 35px 20px
+    margin-bottom: 80px
+    &__title
+      margin-bottom: 30px
+    &__input
+      height: 50px
+      font-size: 16px
+      border-radius: 10px
+    &__form
+      gap: 15px
+    &__input-group
+      max-width: 270px
+    &__button
+      font-size: 16px
+      height: 50px
+      border-radius: 10px
+      max-width: 270px
+
+  .kinds
+    padding: 0
+    margin-bottom: 80px
+    &__card
+      min-width: 355px
+    &__row
+      display: flex
+      width: min-content
+      padding: 0 20px
+    &__window
+      overflow: auto
+      margin-bottom: 15px
+    &__title
+      margin-bottom: 25px
+      padding: 0 20px
+    &__text
+      padding:  0 20px
+      margin-bottom: 40px
+
   .main
     margin-bottom: 80px
     position: relative
@@ -119,10 +281,59 @@
       max-width: 150px
 
 @media screen and (max-width: 767px)
+  .notfound
+    background: url('../img/notfound/bg.png') no-repeat center 20px/400px, #fff
+    padding: 80px 15px 20px
+    &__img
+      max-width: 100%
+      margin: -35px 0 20px
+    &__title
+      font-size: 35px
+      margin-bottom: 5px
+    &__subtitle
+      font-size: 14px
+    &__text
+      font-size: 14px
+
+  .footer
+    padding-top: 25px
+    padding-bottom: 25px
+    &__card
+      max-width: none
+    &__row
+      flex-direction: column
+      gap: 25px
+
+  .advantages
+    &__card
+      flex-direction: column
+      align-items: center
+      background: transparent
+      border-radius: 0
+      border: none
+      box-shadow: none
+      gap: 0
+      margin-bottom: 25px
+      &__box
+        border-radius: 20px
+        border: 2px solid rgba(34, 109, 255, 0.75)
+        background: #FFF
+        box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.15)
+        padding: 25px 20px
+        text-align: center
+
+  .form
+    &__form
+      flex-direction: column
+    &__container
+      max-width: 500px
+
   .main
     padding: 100px 0 210px
     background: url("../img/main/bgM.png") no-repeat right top
     text-align: center
+    &__step
+      text-align: left
     &__row
       justify-content: center
       margin-bottom: 40px
@@ -160,13 +371,37 @@
       max-width: none
 
 @media screen and (max-width: 575px)
+  .section
+    padding-left: 15px
+    padding-right: 15px
+
+  .footer
+    &__box
+      flex-direction: column
+      gap: 20px
+
+  .kinds
+    padding: 0
+    &__title, &__text
+      padding: 0 15px
+    &__title
+      span
+        display: inline-block
+    &__row
+      padding: 0 10px
+    &__arrow
+      padding: 0 10px
+
   .main
+    padding-left: 0
+    padding-right: 0
     &__row
       justify-content: flex-start
       max-width: 300px
       margin: 0 auto 40px
     &__step
       flex-direction: column
+      text-align: center
     &__steps
       &__row
         flex-direction: column
